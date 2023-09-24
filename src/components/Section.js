@@ -52,19 +52,25 @@ const ButtonGroup = styled.div`
   margin-bottom: 30px;
 `;
 const LeftButton = styled.div`
-  background-color: rgba(23, 26, 32, 0.8);
+  background-color: white;
+  opacity: 0.95;
+  color: black;
   height: 40px;
   width: 256px;
-  color: white;
+
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
   opacitu: 0.85;
   cursor: pointer;
+  margin: 8px;
 `;
 
-const RightButton = styled(LeftButton)``;
+const RightButton = styled(LeftButton)`
+  background-color: rgba(23, 26, 32, 0.8);
+  color: white;
+`;
 
 const BottomContainer = styled.div``;
 
