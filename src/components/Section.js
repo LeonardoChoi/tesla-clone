@@ -12,7 +12,7 @@ function Section({
   bottomText,
 }) {
   return (
-    <Wrap>
+    <Wrap bgImg={backgroundImg}>
       <ItemText>
         <h1 className="text-4xl font-bold">{title}</h1>
         <h4 className="text-xl font-bold">From {price}*</h4>
@@ -40,11 +40,11 @@ const Wrap = styled.div`
   background-size: cover;
   backgroun-position: center;
   backgroun-repeat: no-repeat;
-  background-image: url("images/model-s.jpg");
   display: flex;
   flex-direction: column; // this changes the direction that justiy-content and align-items work
   justify-content: space-between; // usually this aligns things horizontally but since we change the direction of flex-direction to colum now it aligns things vertically
   align-items: center; // this is usually to align things vertically but now it will alignt things horizontally
+  background-image: ${(props) => `url("images/${props.bgImg}")`};
 `;
 
 const ItemText = styled.div`
