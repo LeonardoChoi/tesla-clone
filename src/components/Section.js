@@ -2,24 +2,29 @@ import React from "react";
 import styled from "styled-components";
 import "../index.css";
 
-function Section() {
+function Section({
+  title,
+  price,
+  description,
+  backgroundImg,
+  leftBtnText,
+  rightBtnText,
+  bottomText,
+}) {
   return (
     <Wrap>
       <ItemText>
-        <h1 className="text-4xl font-bold">Model S</h1>
-        <h4 className="text-xl font-bold">From $71,090*</h4>
-        <p className="text-xs">After Est. Gas Savings</p>
+        <h1 className="text-4xl font-bold">{title}</h1>
+        <h4 className="text-xl font-bold">From {price}*</h4>
+        <p className="text-xs">{description}</p>
       </ItemText>
       <BottomContainer>
         <ButtonGroup>
-          <LeftButton>Order Now</LeftButton>
-          <RightButton>Demo Drive</RightButton>
+          <LeftButton>{leftBtnText}</LeftButton>
+          <RightButton>{rightBtnText}</RightButton>
         </ButtonGroup>
         <BottomText>
-          <p>
-            *Price before incentives and savings is $74,990 excluding taxes and
-            fees. Subject to change.
-          </p>
+          <p>{bottomText}</p>
           <AboutSavings>Learn About est. gas savings</AboutSavings>
         </BottomText>
       </BottomContainer>
@@ -50,6 +55,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const LeftButton = styled.div`
   background-color: white;
