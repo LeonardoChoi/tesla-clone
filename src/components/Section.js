@@ -38,8 +38,8 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  backgroun-position: center;
-  backgroun-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column; // this changes the direction that justiy-content and align-items work
   justify-content: space-between; // usually this aligns things horizontally but since we change the direction of flex-direction to colum now it aligns things vertically

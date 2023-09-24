@@ -16,16 +16,6 @@ function Home() {
             fees. Subject to change."
       />
       <Section
-        title="Model S"
-        price="$71,090"
-        description="After Est. Gas Savings"
-        backgroundImg="model-s.jpg"
-        leftBtnText="Oder Now"
-        rightBtnText="Demo Drive"
-        bottomText="*Price before incentives and savings is $74,990 excluding taxes and
-            fees. Subject to change."
-      />
-      <Section
         title="Model Y"
         price="$39,390"
         description="After Federal Tax Credit Est. Gas Savings"
@@ -33,6 +23,16 @@ function Home() {
         leftBtnText="Oder Now"
         rightBtnText="Demo Drive"
         bottomText="*Price before incentives and savings is $50,490 excluding taxes and
+            fees. Subject to change."
+      />
+      <Section
+        title="Model S"
+        price="$71,090"
+        description="After Est. Gas Savings"
+        backgroundImg="model-s.jpg"
+        leftBtnText="Oder Now"
+        rightBtnText="Demo Drive"
+        bottomText="*Price before incentives and savings is $74,990 excluding taxes and
             fees. Subject to change."
       />
       <Section
