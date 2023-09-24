@@ -1,18 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import "../index.css";
 
 function Section() {
   return (
     <Wrap>
       <ItemText>
-        <h1>Model S</h1>
-        <h4>From $71,090*</h4>
-        <p>After Est. Gas Savings</p>
+        <h1 className="text-4xl font-bold">Model S</h1>
+        <h4 className="text-xl font-bold">From $71,090*</h4>
+        <p className="text-xs">After Est. Gas Savings</p>
       </ItemText>
-      <ButtonGroup>
-        <LeftButton>Order Now</LeftButton>
-        <RightButton>Demo Drive</RightButton>
-      </ButtonGroup>
+      <BottomContainer>
+        <ButtonGroup>
+          <LeftButton>Order Now</LeftButton>
+          <RightButton>Demo Drive</RightButton>
+        </ButtonGroup>
+        <BottomText>
+          <p>
+            *Price before incentives and savings is $74,990 excluding taxes and
+            fees. Subject to change.
+          </p>
+          <AboutSavings>Learn About est. gas savings</AboutSavings>
+        </BottomText>
+      </BottomContainer>
     </Wrap>
   );
 }
@@ -39,7 +49,7 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  margin: 15px;
+  margin-bottom: 30px;
 `;
 const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
@@ -51,6 +61,18 @@ const LeftButton = styled.div`
   align-items: center;
   border-radius: 6px;
   opacitu: 0.85;
+  cursor: pointer;
 `;
 
 const RightButton = styled(LeftButton)``;
+
+const BottomContainer = styled.div``;
+
+const BottomText = styled.div`
+  font-size: 12px;
+  margin-bottom: 10px;
+`;
+
+const AboutSavings = styled.div`
+  text-decoration: underline;
+`;
