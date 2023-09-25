@@ -10,12 +10,13 @@ function Section({
   leftBtnText,
   rightBtnText,
   bottomText,
+  aboutSavings,
 }) {
   return (
     <Wrap bgImg={backgroundImg}>
       <ItemText>
         <h1 className="text-4xl font-bold">{title}</h1>
-        <h4 className="text-xl font-bold">From {price}*</h4>
+        <h4 className="text-xl font-bold">{price}</h4>
         <p className="text-xs">{description}</p>
       </ItemText>
       <BottomContainer>
@@ -25,7 +26,7 @@ function Section({
         </ButtonGroup>
         <BottomText>
           <p>{bottomText}</p>
-          <AboutSavings>Learn About est. gas savings</AboutSavings>
+          <AboutSavings>{aboutSavings}</AboutSavings>
         </BottomText>
       </BottomContainer>
     </Wrap>
