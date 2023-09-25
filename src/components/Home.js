@@ -63,6 +63,17 @@ function Home() {
         leftBtnText="Order Now"
         rightBtnText="Learn More"
       />
+      <Section
+        title="Powerwall"
+        backgroundImg="powerwall.jpg"
+        leftBtnText="Order Now"
+        rightBtnText="Learn More"
+      />
+      <Section
+        title="Accessories"
+        backgroundImg="accessories2.jpg"
+        leftBtnText="Shop Now"
+      />
     </Container>
   );
 }
